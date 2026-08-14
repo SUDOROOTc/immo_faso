@@ -28,8 +28,8 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
+ALLOWED_HOSTS = ['*']  # Permet de tester si le problème vient de là
 
-ALLOWED_HOSTS = ["immo-prestige.onrender.com"]
 
 # Application definition
 
