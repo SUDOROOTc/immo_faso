@@ -29,6 +29,9 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = ['*']  # Permet de tester si le problème vient de là
+CSRF_TRUSTED_ORIGINS = [
+    'https://immoprestige-production.up.railway.app',
+]
 
 
 # Application definition
